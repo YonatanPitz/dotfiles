@@ -31,6 +31,8 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'easymotion/vim-easymotion'
 
+Plugin 'tpope/vim-commentary'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -52,7 +54,12 @@ set expandtab
 set ignorecase
 set smartcase
 set wrapscan
-
+set hlsearch
+nmap <Leader>h :nohlsearch<cr>
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
 " Solarized
 syntax enable
 " set background=light
@@ -67,4 +74,3 @@ nmap s <Plug>(easymotion-overwin-f2)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader> <Plug>(easymotion-prefix)
-
