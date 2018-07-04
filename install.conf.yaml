@@ -4,9 +4,11 @@
 
 - clean: ['~']
 
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [bash create_vundle_path.sh,  Creating path to vundle install] 
+
 - link:
     ~/.bashrc: bashrc
     ~/.vimrc: vimrc
-
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    ~/.vundle_path: vundle_path

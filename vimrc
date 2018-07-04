@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/dotfiles/Vundle.vim
+source ./vundle_path
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 " call vundle#begin('~/some/path/here')
@@ -29,6 +29,8 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'easymotion/vim-easymotion'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,11 +47,19 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 syntax enable
 set background=light
-colorscheme pablo
-" colorscheme solarized
+" colorscheme pablo
+colorscheme solarized
 set number
 set tabstop=4
 set expandtab
 set ignorecase
 set smartcase
 set wrapscan
+
+" EasyMotion
+let g:EasyMotion_smartcase = 1
+nmap s <Plug>(easymotion-overwin-f2)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader> <Plug>(easymotion-prefix)
+
