@@ -45,16 +45,21 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-syntax enable
-set background=light
 " colorscheme pablo
-colorscheme solarized
 set number
 set tabstop=4
 set expandtab
 set ignorecase
 set smartcase
 set wrapscan
+
+" Solarized
+syntax enable
+" set background=light
+set background=dark
+let g:solarized_termcolors=256
+" let g:solarized_termcolors=16
+colorscheme solarized
 
 " EasyMotion
 let g:EasyMotion_smartcase = 1
