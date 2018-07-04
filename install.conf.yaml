@@ -11,5 +11,6 @@
 - link:
     ~/.bashrc: bashrc
     ~/.bash_aliases: bash_aliases
+    ~/.inputrc: inputrc
     ~/.vimrc: vimrc
     ~/.vundle_path: vundle_path

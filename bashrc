@@ -125,5 +125,3 @@ PERL_MM_OPT="INSTALL_BASE=/home/yonatanp/perl5"; export PERL_MM_OPT;
 if [ "$COLORTERM" == "xfce4-terminal" ] ; then
     export TERM=xterm-256color
 fi
-
-bind TAB:menu-complete
