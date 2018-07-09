@@ -50,6 +50,7 @@ filetype plugin indent on    " required
 " colorscheme pablo
 set number
 set tabstop=4
+set shiftwidth=4
 set expandtab
 set ignorecase
 set smartcase
@@ -60,6 +61,10 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+nnoremap <C-t>     :tabnew<CR>
+nmap <C-h> :tabp<CR>
+nmap <C-l> :tabn<CR>
+
 " Solarized
 syntax enable
 " set background=light
