@@ -9,6 +9,7 @@
     - [bash create_vundle_path.sh,  Creating path to vundle install] 
 
 - link:
+    ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.bash_aliases: bash_aliases
     ~/.inputrc: inputrc
