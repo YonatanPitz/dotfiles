@@ -14,7 +14,6 @@ alias rmf='rm -rf'
 alias -- --='l log.txt'
 alias cde='cd ~/P4/behavioral-model/targets/P4-SAI'
 alias grep='grep -i --color=auto'
-alias build_serv='ssh arc-build-server'
 alias dvs_sw='ssh root@10.209.80.43'
 alias sonic_sw_rcon='ssh -l rcon:7048 10.208.0.32'
 func_e() {
