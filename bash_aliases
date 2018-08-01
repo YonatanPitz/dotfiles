@@ -26,3 +26,11 @@ func_mkd() {
 	mkdir $1
 	cd $1
 }
+
+func_tmux_attach() {
+    tmux attach -t $1
+}
+
+alias clean-docker-stopped-containers='docker ps -aq --no-trunc | xargs docker rm'
+alias clean-docker-untagged-images='docker images -q --filter dangling=true | xargs docker rmi'
+alias tmat=func_tmux_attach
