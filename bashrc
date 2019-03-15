@@ -131,3 +131,5 @@ fi
 if [ -z "$COLORTERM" ] ; then
     export TERM=screen-256color
 fi
+
+bind 'set match-hidden-files on'

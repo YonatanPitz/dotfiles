@@ -3,6 +3,7 @@ alias sa='source ~/.bash_aliases'
 alias gst='git status'
 alias gsh='git rev-parse HEAD'
 alias gsu='git submodule update --init --recursive'
+alias gaa='git add --all'
 alias gittok='xclip -sel clip < ~/.ssh/gittok'
 
 alias oa='subl ~/.bash_aliases'
