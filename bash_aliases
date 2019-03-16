@@ -35,3 +35,8 @@ func_tmux_attach() {
 alias clean-docker-stopped-containers='docker ps -aq --no-trunc | xargs docker rm'
 alias clean-docker-untagged-images='docker images -q --filter dangling=true | xargs docker rmi'
 alias tmat=func_tmux_attach
+
+# Python
+alias python=python3
+alias pip=pip3
+alias ipython=ipython3

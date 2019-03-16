@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -124,12 +124,12 @@ PERL_LOCAL_LIB_ROOT="/home/yonatanp/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LI
 PERL_MB_OPT="--install_base \"/home/yonatanp/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/yonatanp/perl5"; export PERL_MM_OPT;
 
-if [ "$COLORTERM" == "xfce4-terminal" ] ; then
+# if [ "$COLORTERM" == "xfce4-terminal" ] ; then
     export TERM=screen-256color
-fi
+# fi
 
-if [ -z "$COLORTERM" ] ; then
-    export TERM=screen-256color
-fi
+# if [ -z "$COLORTERM" ] ; then
+    # export TERM=screen-256color
+# fi
 
 bind 'set match-hidden-files on'
