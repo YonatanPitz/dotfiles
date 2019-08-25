@@ -133,3 +133,4 @@ PERL_MM_OPT="INSTALL_BASE=/home/yonatanp/perl5"; export PERL_MM_OPT;
 # fi
 
 bind 'set match-hidden-files on'
+export EDITOR="/usr/bin/vim"
