@@ -28,12 +28,10 @@ Plugin 'tpope/vim-fugitive'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'altercation/vim-colors-solarized'
-
 Plugin 'easymotion/vim-easymotion'
-
 Plugin 'tpope/vim-commentary'
-
 Plugin 'brookhong/cscope.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,6 +64,9 @@ nmap <silent> <A-Right> :wincmd l<CR>
 nnoremap <C-t>     :tabnew<CR>
 nmap <C-h> :tabp<CR>
 nmap <C-l> :tabn<CR>
+
+nmap <C-p> :CtrlPBuffer
+nmap <C-S-p> :CtrlPBuffer
 
 " Solarized
 syntax enable
