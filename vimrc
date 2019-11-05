@@ -30,7 +30,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-commentary'
-Plugin 'brookhong/cscope.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
@@ -56,15 +55,10 @@ set ignorecase
 set smartcase
 set wrapscan
 set hlsearch
-nmap <Leader>h :nohlsearch<cr>
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
-nnoremap <C-t>     :tabnew<CR>
-nmap <C-h> :tabp<CR>
-nmap <C-l> :tabn<CR>
-
+nnoremap <C-t> :tabnew<CR>
+nnoremap <C-k> :tabp<CR>
+nnoremap <C-l> :tabn<CR>
+map <Leader>h  :nohl<CR>
 nmap <C-p> :CtrlPBuffer
 nmap <C-S-p> :CtrlPBuffer
 
@@ -78,31 +72,7 @@ colorscheme solarized
 
 " EasyMotion
 let g:EasyMotion_smartcase = 1
-nmap s <Plug>(easymotion-overwin-f2)
+nmap ss <Plug>(easymotion-overwin-f2)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 " map <Leader> <Plug>(easymotion-prefix)
-
-" Set easy toggling between panes
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" CScope maps
-" s: Find this C symbol
-nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
-" g: Find this definition
-nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
-" d: Find functions called by this function
-nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
-" c: Find functions calling this function
-nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
-" t: Find this text string
-nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
-" e: Find this egrep pattern
-nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
-" f: Find this file
-nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
-" i: Find files #including this file
-nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
