@@ -58,6 +58,7 @@ set hlsearch
 nnoremap <C-t> :tabnew<CR>
 nnoremap <C-k> :tabp<CR>
 nnoremap <C-l> :tabn<CR>
+map <Leader>h  :nohl<CR>
 
 " Solarized
 syntax enable
