@@ -31,6 +31,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-commentary'
 Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'valloric/youcompleteme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
